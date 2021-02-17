@@ -34,7 +34,27 @@ namespace Playing_With_Strings
             //with String.Format we replace the value in the specified format
             //Syntax: String.Format("any string {index}", object);
 
-            Console.WriteLine(String.Format("My name is {0}", firstName));
+            Console.WriteLine(String.Format("My name is {0}.", firstName)); //output: My name is Nikki.
+
+            //String Challenge 1
+
+            //declare a string variable and assign no value
+            string catName;
+
+            //print console "Please enter your name and and press enter"
+            Console.WriteLine("Please enter your cat's name and press enter");
+            //assign entered string to string variable
+            string userInput = Console.ReadLine();
+            catName = userInput;
+            //first line, string in uppercase
+            Console.WriteLine(catName.ToUpper());
+            //second line, lowercase
+            Console.WriteLine(catName.ToLower());
+            //third line, no white space
+            Console.WriteLine(String.IsNullOrWhiteSpace(catName));
+            //last line, substring of the entered string on the console
+            Console.WriteLine(catName.Substring(1));
+
         }
     }
 }
