@@ -47,13 +47,13 @@ namespace Playing_With_Strings
             string userInput = Console.ReadLine();
             catName = userInput;
             //first line, string in uppercase
-            Console.WriteLine(catName.ToUpper());
+            Console.WriteLine(String.Format("Upper case: {0}",catName.ToUpper()));
             //second line, lowercase
-            Console.WriteLine(catName.ToLower());
+            Console.WriteLine(String.Format("Lower case: {0}",catName.ToLower()));
             //third line, no white space
-            Console.WriteLine(String.IsNullOrWhiteSpace(catName));
+            Console.WriteLine(String.Format("No whitespace: {0}",catName.Trim()));
             //last line, substring of the entered string on the console
-            Console.WriteLine(catName.Substring(1));
+            Console.WriteLine(String.Format("Substring: {0}",catName.Substring(1)));
 
         }
     }
