@@ -55,6 +55,31 @@ namespace Playing_With_Strings
             //last line, substring of the entered string on the console
             Console.WriteLine(String.Format("Substring: {0}",catName.Substring(1)));
 
+
+            //String Challenge 2
+
+            //ask the user to input a string
+            Console.WriteLine("Please enter a string:");
+            string stringInput = Console.ReadLine();
+
+            //ask the user for the character to search in the string they entered
+            Console.WriteLine("Enter the character to search:");
+            string stringSearch = Console.ReadLine();
+
+            //write the index of the first occurrence
+             Console.WriteLine(String.Format("Index: {0}",stringInput.IndexOf(stringSearch)));
+
+            // ask to enter first name...
+            Console.WriteLine("Enter first name:");
+            string first = Console.ReadLine();
+
+            // ...then ask for last name
+            Console.WriteLine("Enter last name:");
+            string last = Console.ReadLine();
+
+            //then print the full name on a single line, store in variable before display
+            string fullestName = first + " " + last;
+            Console.WriteLine(String.Format("Your full name is {0}", fullestName));
         }
     }
 }
